@@ -26,7 +26,7 @@ class MH_Z14A {
     void begin(SoftwareSerial* serial);
     void begin(uint8_t pin_rx, uint8_t pin_tx);
 #endif
-    uint8_t read(int *ppm);
+    uint8_t read(uint32_t *ppm);
     uint8_t calibrate_zero_point(void);
 	uint8_t calibrate_span_point(void);
   private:

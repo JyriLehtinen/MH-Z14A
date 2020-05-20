@@ -23,7 +23,7 @@ MH_Z14A::MH_Z14A(void) {
 //
 }
 
-uint8_t MH_Z14A::read(int *ppm) {
+uint8_t MH_Z14A::read(uint32_t *ppm) {
 
     while (mh_data->available() > 0) {
       mh_data->read(); // Clear out the RX buffer

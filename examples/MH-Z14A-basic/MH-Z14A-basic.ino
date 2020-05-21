@@ -17,7 +17,7 @@ void setup() {
 }
 
 void loop() {
-  int ppm;
+  uint32_t ppm;
   uint8_t err = sensor.read(&ppm);
 
   if(err) {
